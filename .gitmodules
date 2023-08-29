@@ -2,3 +2,7 @@
 	path = arpeggio-ts
 	url = git@github.com:isaacdecoded/arpeggio-ts.git
 	branch = main
+[submodule "arpeggio-py"]
+	path = arpeggio-py
+	url = git@github.com:isaacdecoded/arpeggio-py.git
+	branch = main

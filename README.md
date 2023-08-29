@@ -6,7 +6,7 @@ Minimalistic but extendable software development template based on Clean Archite
 
 In music context, arpeggios are melodic combinations of notes that have in common their belonging to a certain chord or tonality. Said in a slightly easier to understand way, it would be to spread out (place one after the other instead of sounding them all at the same time) the notes of a chord or certain notes of a tonality or scale.
 
-Now imagine each layer of a software architecture as notes and each implementation of these layers as arpeggios, i.e: the execution of a Command (refering to CQRS) is a combination of processes that are implemented from infrastructure layer to domain layer so this Command will combine each layer in order to make a success mutation, an arpeggio.
+Now imagine each layer of a software architecture as notes and each implementation of these layers as arpeggios, i.e: the execution of a Command (referring to CQRS) is a combination of processes that are implemented from infrastructure layer to domain layer so this Command will combine each layer in order to make a success mutation, an arpeggio.
 
 # Explanation
 
@@ -18,7 +18,7 @@ Lets start by defining the software architecture layers (described as directorie
 
 - Adapters: contains the intermediates between Infrastructure and Application layer as controllers, presenters, etc.
 
-- Infrastructure: contains all the implementation details about technologies, storage systems, external services integrations, etc.
+- Infrastructure: contains all the implementation details about technologies, storage systems, integrations with external services, etc.
 
 ## Full-layered Implementation
 You maintain Infrastructure Layer abstraction as much as possible.
