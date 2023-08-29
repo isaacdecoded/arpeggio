@@ -1,0 +1,4 @@
+[submodule "arpeggio-ts"]
+	path = arpeggio-ts
+	url = git@github.com:isaacdecoded/arpeggio-ts.git
+	branch = main
