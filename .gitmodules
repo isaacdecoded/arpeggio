@@ -6,7 +6,7 @@
 	path = arpeggio-py
 	url = git@github.com:isaacdecoded/arpeggio-py.git
 	branch = main
-[submodule "arpeggio-rust"]
-	path = arpeggio-rust
-	url = git@github.com:isaacdecoded/arpeggio-rust.git
+[submodule "arpeggio-rs"]
+	path = arpeggio-rs
+	url = git@github.com:isaacdecoded/arpeggio-rs.git
 	branch = main
