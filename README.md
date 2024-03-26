@@ -19,7 +19,7 @@ For this project to be useful and to avoid any confusion while practicing the DD
 
     Additionally, **avoid mixing read models with domain models**, or write models. In other words, there's no need to load the _Order Aggregate_ model into memory for read-only operations. Instead, create a _Read Order Model_ that displays the necessary information for your system.
 
-7.  Lastly, **it's crucial to ensure that the business use cases are complex enough in terms of consistency boundaries** before employing Domain-Driven Design (DDD) in your project. This is because simpler solutions may suffice, such as a CRUD/Script service with POJO-based models. Also, keep these tips in mind when modeling aggregates:
+7.  Lastly, **it's crucial to ensure that the business use cases are complex enough in terms of consistency boundaries** before employing Domain-Driven Design (DDD) in your project. This is because simpler solutions may suffice, such as a CRUD/Script service with POJO-based models. Therefore, **DO NOT** underestimate the power of brainstorming. Also, keep these tips in mind when modeling aggregates:
     - Opt for multiple small aggregates over large-cluster ones.
     - Use _reference by identity_ between aggregates.
     - If an aggregate's memory size becomes too large, split it into multiple instances.
