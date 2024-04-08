@@ -10,3 +10,7 @@
 	path = arpeggio-rs
 	url = git@github.com:isaacdecoded/arpeggio-rs.git
 	branch = main
+[submodule "arpeggio-cli"]
+	path = arpeggio-cli
+	url = git@github.com:isaacdecoded/arpeggio-cli.git
+	branch = main
