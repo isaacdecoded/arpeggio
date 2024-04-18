@@ -1,10 +1,12 @@
-# Arpeggio
+<p align="center">
+  <img src="./misc/0-Arpeggio.png" loading="lazy"/>
+</p>
 
 > Arpeggio streamlines the onboarding process for projects grounded in **_Clean Architecture_** and **_Domain-driven Design (DDD)_**
 
 ## MANIFESTO
 
-Welcome to _[Arpeggio](https://github.com/isaacdecoded/arpeggio)_, a curated and minimalistic coding template. It includes a set of artifacts that help kickstart projects based on **Domain-Driven Design (DDD)**. Moreover, _Arpeggio_ adopts a layered architecture approach by offering an organized directory and data structure definitions in line with the **Clean Architecture premise, which incorporates SOLID principles.**
+Welcome to _[Arpeggio](https://github.com/isaacdecoded/arpeggio)_, a curated and minimalistic coding template that includes a set of artifacts that help kickstart projects based on **Domain-Driven Design (DDD)**. Moreover, _Arpeggio_ adopts a layered architecture approach by offering an organized directory and data structure definitions in line with the **Clean Architecture premise, which incorporates SOLID principles.**
 
 It's crucial to understand that **DDD** **IS NOT about coding or defining data states, but rather a process of modeling specific business use case concepts. Consequently, this project IS NOT a formula for a _best-of-all_ domain model, assuming such a thing exists**. While this project serves as a straightforward coding template for DDD-based projects, its implementation alone won't guarantee well-designed domain models. In other words, **a well-defined domain model relies on thorough business case concept analysis that underpins all the implemented artifacts** (_Aggregates, Entities, Value Objects, Services, Repositories, Factories, and Modules_), regardless of the paradigm or approach (OOP, FP, etc.) you eventually adopt.
 
@@ -13,7 +15,7 @@ For this project to be useful and to avoid any confusion while practicing the DD
 1.  **Keep in mind that you are modeling concepts.** It's easy to get sidetracked by data-driven ideas or infrastructure implementation details. In the initial stage, our goal is to model business use case concepts. For example, "_in an E-commerce context, Users can place Orders, which can be tracked by a unique Identifier Number and consist of at least one Order Line. These Order Lines include details such as the ordered Product and its Quantity._"
 2.  **Your modeled concepts should correspond to a specific business use case only** and must naturally express it. Technically, this means that the [invariants of a domain model](https://lostechies.com/jimmybogard/2010/02/24/strengthening-your-domain-aggregate-construction/), its corrective policies, and its lifecycle should align with its intended business use case. _For example, in a Courier Context, you might want to change an Order Status from "In transit" to "Delivered", respecting all the invariants and policies it implies. Conversely, in the E-commerce Context, you might not be concerned with changing the Order Status, but rather the Order Details such as Products, Delivery Address, Payment Information, etc._
 3.  **Analyze your business domain from a user's perspective.** This involves a deep dive into the use case you plan to resolve. By doing so, you can identify insights that will help you understand the real-world concepts you're aiming to model. For example, as a user, "_I place an Order for purchase Products of my interest, I want those Products to be delivered to my home Address and, if possible, apply a Discount Code over the Products price._"
-4.  **Start designing models from scratch with a behaviorally semantic approach.** This way, you imbue the model with meaning right from the start, incorporating aspects of the _Ubiquitous Language_ that you might use during modeling, as well as the business use case. Ultimately, your model will narrate a sequence of events and facts, much like a story. For instance, _“a Client creates an Order. This Order validates its Order Lines for consistency and reserves the specified Products for a certain period while the Payment is processed. Finally, the Order is placed and a domain event is triggered.”_ Imagine then another _Aggregate_ from a supposed _Courier Context_ subscribing to this _Order Placed_ domain event to initiate the delivery process. And so, the story continues…
+4.  **Start designing models from scratch with a behaviorally semantic approach.** This way, you imbue the model with meaning right from the start, incorporating aspects of the _Ubiquitous Language_ that you might use during modeling. Ultimately, your model will narrate a sequence of events and facts, much like a story. For instance, _“a Client creates an Order. This Order validates its Order Lines for consistency and reserves the specified Products for a certain period while the Payment is processed. Finally, the Order is placed and a domain event is triggered.”_ Imagine then another _Aggregate_ from a supposed _Courier Context_ subscribing to this _Order Placed_ domain event to initiate the delivery process. And so, the story continues…
 5.  **Models can naturally evolve and change over time.** It's common to refactor or add new behaviors to the model as new insights are uncovered or different solutions are explored. There's a variety of design patterns or approaches to implement, and no single "best" solution. The tactical _Aggregate Pattern_ from _DDD_ is particularly useful because it creates models that are sufficiently decoupled to allow changes and provide warnings if inconsistencies arise. Don't hesitate to improve your models when necessary.
 6.  **Avoid designing overly complex models.** One of the primary goals of DDD is to maintain consistency boundaries. This means that any changes to the domain objects must preserve a state of consistency and integrity. For some business use cases, models may become so complex that they appear to endlessly expand, both conceptually and in terms of memory consumption at runtime. Therefore, it's crucial to keep models simple by dividing them into multiple small aggregates that can reference each other by their _Aggregate Root_ identity.
 
@@ -56,7 +58,7 @@ Arpeggio's core artifacts are arranged as per the separation of concerns propose
 - **Domain directory:** This includes the base artifacts for a Domain-driven Design modeling in a detailed manner. It contains the following directories:
   - **Events:** This includes domain event bus and subscriber interfaces, and the domain event abstract class for domain events logic.
   - **Models:** Here, you'll find entity, aggregate root, and value object as abstract classes, and a pair of built-in classes for Date and Identity objects.
-  - **Repositories:** This contains a criteria interface that aims to facilitate querying based on offset pagination and a detailed nullable type for optional values.
+  - **Repositories:** This contains a _Criteria Pattern_ interface that aims to facilitate querying data from the repository.
   - **Specifications:** This includes a set of classes that follows the _Specification Pattern_ proposed by the Domain-driven Design approach.
 - **Application directory:** This contains the Input and Output ports interfaces that will guide the Use Cases and Presenters implementations.
 - **Adapters directory:** This includes the interface for the controllers that will interact with the Use Case implementations.
@@ -168,6 +170,15 @@ In conclusion, you can see the result of this development process in the program
 - [The Plan Concept on TypeScript](https://github.com/isaacdecoded/arpeggio-ts/tree/plan-concept-example)
 - [The Plan Concept on Rust](https://github.com/isaacdecoded/arpeggio-rs/tree/plan-concept-example)
 - [The Plan Concept on Python](https://github.com/isaacdecoded/arpeggio-py/tree/plan-concept-example)
+
+
+## **CONCLUSION**
+
+Now, based on the previous practical exercise, we can resume this development process as:
+1. Brainstorming
+2. Brainstorming
+3. Model
+
 
 ## **WHAT'S NEXT**
 
