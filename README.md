@@ -2,7 +2,7 @@
   <img src="./misc/0-Arpeggio.png" loading="lazy"/>
 </p>
 
-> Arpeggio streamlines the onboarding process for projects grounded in **_Clean Architecture_** and **_Domain-driven Design (DDD)_**
+> Arpeggio streamlines the onboarding process for projects grounded in **_Clean Architecture_** and **_Domain-driven Design (DDD)_** on [Rust](https://github.com/isaacdecoded/arpeggio-rs/tree/main), [TypeScript](https://github.com/isaacdecoded/arpeggio-ts/tree/main), and [Python](https://github.com/isaacdecoded/arpeggio-py/tree/main).
 
 ## MANIFESTO
 
@@ -167,18 +167,9 @@ At first glance, Figure 6 might seem complex for a "simple" use case. However, u
 
 In conclusion, you can see the result of this development process in the programming language-specific examples below:
 
-- [The Plan Concept on TypeScript](https://github.com/isaacdecoded/arpeggio-ts/tree/plan-concept-example)
 - [The Plan Concept on Rust](https://github.com/isaacdecoded/arpeggio-rs/tree/plan-concept-example)
+- [The Plan Concept on TypeScript](https://github.com/isaacdecoded/arpeggio-ts/tree/plan-concept-example)
 - [The Plan Concept on Python](https://github.com/isaacdecoded/arpeggio-py/tree/plan-concept-example)
-
-
-## **CONCLUSION**
-
-Now, based on the previous practical exercise, we can resume this development process as:
-1. Brainstorming
-2. Brainstorming
-3. Model
-
 
 ## **WHAT'S NEXT**
 
@@ -194,16 +185,16 @@ The following is a list of authors, articles, and blogs that were influential in
 - Probably the best [DDD sample app](https://github.com/citerus/dddsample-core) on the Internet
 - [Coding for Domain-Driven Design: Tips for Data-Focused Devs](https://learn.microsoft.com/en-us/archive/msdn-magazine/2013/august/data-points-coding-for-domain-driven-design-tips-for-data-focused-devs)
 - [Strengthening your domain aggregate construction](https://lostechies.com/jimmybogard/2010/02/24/strengthening-your-domain-aggregate-construction/)
-- [Domain Event DOs and DONTs](https://eventuous.dev/docs/domain/domain-events/#:~:text=By%20bringing%20value%20objects%20to,events%20and%20nothing%20will%20work)
-- [Entity of Value Object: that is the question](https://dariodip.medium.com/entity-or-value-object-that-is-the-question-fa1dc5d58406#:~:text=If%20you%20often%20need%20to,based%2C%20it's%20a%20Value%20Object)
-- [Bounded Contexts relationships](https://ddd-practitioners.com/home/glossary/bounded-context/bounded-context-relationship/#:~:text=Anticorruption%20Layer%3A%20This%20is%20a,have%20different%20vocabularies%20or%20models)
+- [Domain Event DOs and DONTs](https://eventuous.dev/docs/domain/domain-events/)
+- [Entity of Value Object: that is the question](https://dariodip.medium.com/entity-or-value-object-that-is-the-question-fa1dc5d58406)
+- [Bounded Contexts relationships](https://ddd-practitioners.com/home/glossary/bounded-context/bounded-context-relationship/)
 - [Implementing Clean Architecture](https://www.plainionist.net/Implementing-Clean-Architecture-Overview/)
 
 If the lecturer is interested, the following is a list of other intriguing texts that were explored:
 
 - The [Aggregate Design](https://images.squarespace-cdn.com/content/v1/5d496d33d136f20001750af5/1583524520188-N2R98ASHHQ6PEI94837V/Aggregate+Design+Canvas.001.jpeg?format=2500w) canvas and an [example](https://github.com/ddd-crew/aggregate-design-canvas/blob/master/examples/naive-bank-account.jpg)
 - **Udi Dahan** about avoiding deletion on [Don’t delete, just don’t](https://udidahan.com/2009/09/01/dont-delete-just-dont/)
-- [The Domain Model Trilemma](https://enterprisecraftsmanship.com/posts/domain-model-purity-completeness/#:%7E:text=Domain%20model%20completeness%20%E2%80%94%20When%20all,out%2Dof%2Dprocess%20dependencies.)
+- [The Domain Model Trilemma](https://enterprisecraftsmanship.com/posts/domain-model-purity-completeness/)
 - [A Clean Architecture Practical example](https://developers.redhat.com/articles/2023/08/08/implementing-clean-architecture-solutions-practical-example)
 - [Hexagonal Architecture, DDD & CQRS in Typescript](https://github.com/CodelyTV/typescript-ddd-example?tab=readme-ov-file) by Codely
 - [DDD articles](https://khalilstemmler.com/articles/categories/domain-driven-design/) by Khalil Stemmler
