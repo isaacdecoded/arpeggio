@@ -180,7 +180,7 @@ The open-source nature of this project encourages collaborative improvement, inv
 The following is a list of authors, articles, and blogs that were influential in the development of this project. Predominantly, it's based on the teachings from [The Big Blue Book](https://www.domainlanguage.com/ddd/blue-book/) by Eric Evans and The [Clean Architecture](https://g.co/kgs/ELT2n7T) by Robert C. Martin.
 
 - **Vaughn Vernon** about [Effective Aggregate Design](https://www.dddcommunity.org/library/vernon_2011/)
-- **Martin Fowler** about [DDD Aggregate](https://martinfowler.com/bliki/DDD_Aggregate.html)
+- **Martin Fowler** about [Bounded Context](https://martinfowler.com/bliki/BoundedContext.html) and [DDD Aggregate](https://martinfowler.com/bliki/DDD_Aggregate.html)
 - **Alexey Zimarev** about [Aggregate pattern in DDD](https://blog.eventuous.dev/aggregate-pattern-in-domain-driven-design-7ad823475099)
 - Probably the best [DDD sample app](https://github.com/citerus/dddsample-core) on the Internet
 - [Coding for Domain-Driven Design: Tips for Data-Focused Devs](https://learn.microsoft.com/en-us/archive/msdn-magazine/2013/august/data-points-coding-for-domain-driven-design-tips-for-data-focused-devs)
