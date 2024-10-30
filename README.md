@@ -33,7 +33,7 @@ In a musical context, an arpeggio is a sequence of notes that are part of a chor
 
 Consider for a moment the structure of a layered software architecture as akin to a musical scale where the implementations that occur within each layer are the individual notes, and when triggered, they do not sound all at once but are instead activated in a deliberate sequence.
 
-Take, for instance, the _Command_ in _CQRS_ (Command Query Responsibility Segregation). It can be likened to a chord, and its execution involves a series of processes—akin to the notes in the chord. These processes are implemented across different layers, from the _Infrastructure_ to the _Domain_. As the _Command_ propagates through each layer, it "plays" out its role, resulting in a harmonious operation that's reminiscent of an arpeggio, where each note contributes to the overall melody. This approach ensures that the system's changes are orchestrated in a cohesive and coordinated manner.
+Take, for instance, a _Use Case_ from from a given process. This _Use Case_ can be likened to a chord, and its execution involves a series of steps—akin to the notes in that chord. These steps are implemented across different layers, from the _Infrastructure_ to the _Domain_. Then, the _Use Case_ execution results in a harmonious operation that's reminiscent of an arpeggio, where each note contributes to the overall melody. **This approach ensures that the system's maintainability and scalability are orchestrated in a cohesive and coordinated manner.**
 
 ## Table of Contents
 
@@ -53,16 +53,16 @@ Take, for instance, the _Command_ in _CQRS_ (Command Query Responsibility Segreg
 
 ## **Core artifacts**
 
-Arpeggio's core artifacts are arranged as per the separation of concerns proposed by [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html). These include the _domain_ directory for the **entities layer**, the _application_ directory for the **use cases layer**, the _adapters_ directory for the **interface adapters layer**, and the _infrastructure_ directory for the **frameworks and drivers layer**. Here's what each directory contains:
+Arpeggio's core artifacts are arranged as per the separation of concerns proposed by [Clean Architecture](https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html). These include the _domain_ directory for the **entities layer**, the _application_ directory for the **business use cases layer**, the _adapters_ directory for the **interface adapters layer**, and the _infrastructure_ directory for the **frameworks and drivers layer**. Here's what each directory contains:
 
-- **Domain directory:** This includes the base artifacts for a Domain-driven Design modeling in a detailed manner. It contains the following directories:
-  - **Events:** This includes domain event bus and subscriber interfaces, and the domain event abstract class for domain events logic.
-  - **Models:** Here, you'll find entity, aggregate root, and value object as abstract classes, and a pair of built-in classes for Date and Identity objects.
+- **Domain directory:** This includes the base artifacts for a Domain-driven Design modeling. It contains the following directories:
+  - **Events:** This includes _Domain Event Bus_ and _Subscriber_ interfaces, and the _Domain Event_ abstraction for domain events logic.
+  - **Models:** Here, you'll find the _Entity_, _Aggregate Root_, and _Value Object_ abstractions, and a pair of built-in definitions for _Date_ and _Identity_.
   - **Repositories:** This contains a _Criteria Pattern_ interface that aims to facilitate querying data from the repository.
   - **Specifications:** This includes a set of classes that follows the _Specification Pattern_ proposed by the Domain-driven Design approach.
-- **Application directory:** This contains the Input and Output ports interfaces that will guide the Use Cases and Presenters implementations.
-- **Adapters directory:** This includes the interface for the controllers that will interact with the Use Case implementations.
-- **Infrastructure directory:** This provides a basic in-memory domain event bus implementation to start handling domain events immediately.
+- **Application directory:** This contains the _Input Port_ and _Output Port_ interfaces that will guide the _Use Cases_ and _Presenters_ implementations.
+- **Adapters directory:** This includes the interface for the _Controllers_ that will interact with the _Use Case_ implementations.
+- **Infrastructure directory:** This provides a basic in-memory _Domain Event Bus_ implementation to start handling domain events immediately.
 
 Lastly, it's crucial to note that these _core_ definitions are not intended to be used as a _framework_. They are designed to be adaptable to changes based on system requirements and specific business use cases.
 
@@ -77,7 +77,7 @@ It's worth noting that the generation of identity (ID) does not have a one-size-
 
 ## **Date Object**
 
-This definition intends to facilitate the date creation and update handling, it is important to note that dates take on certain value when using _Domain Events_ in the models.
+This definition intends to facilitate the date creation and update handling, it is important to note that dates take on certain value when using _Domain Events_ and/or applying _Event Sourcing Pattern_.
 
 ## **Use Cases and CQRS**
 
